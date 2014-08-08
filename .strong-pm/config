@@ -1,0 +1,16 @@
+; these are the defaults
+prepare[] = npm rebuild
+prepare[] = npm install --production
+start = slc run --cluster 2 --metrics statsd://ec2-54-190-48-111.us-west-2.compute.amazonaws.com:8125 
+stop = SIGTERM
+restart = SIGHUP
+
+; these are overrides for a particular repo, deploy to it like:
+;   slc deploy http://host:port/config-one
+[config-one]
+; no prepare
+prepare =
+; run with node
+start = node .
+; single instance node doesn't support restart
+restart = no
