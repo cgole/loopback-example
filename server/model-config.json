@@ -5,27 +5,35 @@
       "./models"
     ]
   },
-  "User": {
+  "AccessToken": {
+    "public": false,
     "dataSource": "db"
   },
-  "AccessToken": {
-    "dataSource": "db",
-    "public": false
-  },
   "ACL": {
-    "dataSource": "db",
-    "public": false
+    "public": false,
+    "dataSource": "db"
   },
   "RoleMapping": {
-    "dataSource": "db",
-    "public": false
+    "public": false,
+    "dataSource": "db"
   },
   "Role": {
-    "dataSource": "db",
-    "public": false
+    "public": false,
+    "dataSource": "db"
   },
-  "cars": {
-    "dataSource": "db",
-    "public": true
+  "Car": {
+    "dataSource": "db"
+  },
+  "Customer": {
+    "dataSource": "db"
+  },
+  "Inventory": {
+    "dataSource": "db"
+  },
+  "Location": {
+    "dataSource": "db"
+  },
+  "Note": {
+    "dataSource": "db"
   }
 }
